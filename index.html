@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>
+            CALCULATOR
+        </title>
+        <link  rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 style="color:white;text-align:left;">CALCULATOR</h1>
+        <div class="calculator-box">
+         <input type="text" id="result" placeholder="Enter the number" style="width:250px; height:40px; border-radius: 5px; border-style: groove;"><br>
+         <table>
+             <tr>
+                 <td><button onclick='dis("1")' >1</button></td><br>
+                 <td><button onclick='dis("2")'>2</button></td>
+                 <td><button onclick='dis("3")'>3</button></td>
+             </tr>
+             <tr>
+                <td><button onclick='dis("4")'>4</button></td>
+                <td><button onclick='dis("5")'>5</button></td>
+                <td><button onclick='dis("6")'>6</button></td>
+            </tr>
+            <tr>
+                <td><button onclick='dis("7")'>7</button></td>
+                <td><button onclick='dis("8")'>8</button></td>
+                <td><button onclick='dis("9")'>9</button></td>
+            </tr>
+            <tr>
+                <td><button onclick='dis("0")'>0</button></td>
+                <td><button onclick='dis("-")'>-</button></td>
+                <td><button  onclick='dis("+")'>+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick='dis("*")'>*</button></td>
+                <td><button onclick='dis("/")'>/</button></td>
+                <td><button onclick="solve()">=</button></td>
+            </tr>
+         </table><br>
+        <button class="span3" onclick="clr()">CLR</button></div>
+    </body>
+    <script> 
+        //function that display value 
+        function dis(val) 
+        { 
+            document.getElementById("result").value+=val 
+        } 
+          
+        //function that evaluates the digit and return result 
+        function solve() 
+        { 
+            let x = document.getElementById("result").value 
+            let y = eval(x) 
+            document.getElementById("result").value = y 
+        } 
+          
+        //function that clear the display 
+        function clr() 
+        { 
+            document.getElementById("result").value = "" 
+        } 
+     </script> 
+   
+</html>

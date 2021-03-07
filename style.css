@@ -1,0 +1,31 @@
+body{
+    padding-left: 600px;
+    padding-top: 180px;
+    background-color:black;
+}
+button{
+    width:80px;
+    height: 50px;
+    background-color: #1ebba3;
+    border-style: hidden;
+    border-radius:5px;
+    font-size: 20px;
+    cursor:pointer;
+
+}
+.span3{
+    width:250px;
+    background-color:#1ebba3;
+}
+.calculator-box{
+    width:380px;
+    height:400px;
+    position:relative;
+    border-color:black;
+}
+button:hover{
+    background-color:yellow;
+}
+.span3:hover{
+    background-color:red;
+}
